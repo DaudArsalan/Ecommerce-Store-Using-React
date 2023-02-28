@@ -1,0 +1,37 @@
+@import "../../css-config/mixins.scss";
+
+.about-page {
+  margin: 20px 0;
+  @include md {
+    margin: 75px 0;
+  }
+
+  .layout {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    @include md {
+      max-width: 1200px;
+    }
+
+    .about-page-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+        @include md {
+          font-size: 38px;
+          margin-bottom: 50px;
+        }
+    }
+
+    .about-page-text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        color: #4c4c4c;
+        @include md {
+          font-size: 24px;
+          line-height: 40px;
+        }
+    }
+  }
+}
