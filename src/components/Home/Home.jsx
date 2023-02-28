@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     getProducts();
     getCategories();
-  }, []);
+  });
 
   const getProducts = () => {
     fetchDataFromApi("/api/products?populate=*").then((res) => {
