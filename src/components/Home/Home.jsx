@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Banner from "./Banner/Banner";
 import Category from "./Category/Category";
 import Products from "../Products/Products";
@@ -14,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     getProducts();
     getCategories();
-  });
+  },[]);
 
   const getProducts = () => {
     fetchDataFromApi("/api/products?populate=*").then((res) => {
